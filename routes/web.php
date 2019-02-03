@@ -21,3 +21,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/Admin/logo','Admin\LogoController',['as'=>'admin']);
+Route::resource('/Admin/team','Admin\TeamController',['as'=>'admin']);
+Route::resource('/Admin/slider','Admin\SliderController',['as'=>'admin']);
+Route::resource('/Admin/client','Admin\ClientController',['as'=>'admin']);
